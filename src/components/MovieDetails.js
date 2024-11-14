@@ -4,7 +4,7 @@ import { Link, useParams } from "react-router-dom";
 import { Col, Row } from "react-bootstrap";
 import { useSelector } from "react-redux";
 
-const MovieDetails = async () => {
+const MovieDetails = () => {
   const movies = useSelector((state) => state.movies);
   const { id } = useParams();
   let [movie, setMovie] = useState({});
@@ -17,7 +17,7 @@ const MovieDetails = async () => {
   async function getMovieDetails() {
     if (movies.length !== 0) {
       let movie = movies.find((ele) => {
-        return ele.id == id;
+        return ele.id === id;
       });
       setMovie(movie);
     } else {
