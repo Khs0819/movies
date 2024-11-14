@@ -14,7 +14,7 @@ const MovieDetails = () => {
     );
     setMovie(data);
   };
-  function getMovieDetails() {
+  async function getMovieDetails() {
     if (movies.length !== 0) {
       let movie = movies.find((ele) => {
         return ele.id == id;
