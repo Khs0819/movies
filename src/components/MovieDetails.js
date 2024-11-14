@@ -17,7 +17,7 @@ const MovieDetails = () => {
   async function getMovieDetails() {
     if (movies.length !== 0) {
       let movie = movies.find((ele) => {
-        return ele.id === id;
+        return ele.id == id;
       });
       setMovie(movie);
     } else {
