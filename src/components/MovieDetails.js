@@ -4,7 +4,7 @@ import { Link, useParams } from "react-router-dom";
 import { Col, Row } from "react-bootstrap";
 import { useSelector } from "react-redux";
 
-const MovieDetails = () => {
+const MovieDetails = async () => {
   const movies = useSelector((state) => state.movies);
   const { id } = useParams();
   let [movie, setMovie] = useState({});
