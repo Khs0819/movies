@@ -53,7 +53,9 @@ const MovieDetails = () => {
       <Row>
         <Col md="12" xs="12" sm="12" className="mt-4">
           <h2>القصة: </h2>
-          <p>{movie.overview ? movie.overview : "لا يتوفر قصة لهذا الفيلم"}</p>
+          <p>
+            {movie.overview ? movie.overview : <p>لا يتوفر قصة لهذا الفيلم</p>}
+          </p>
         </Col>
       </Row>
       <Row>
