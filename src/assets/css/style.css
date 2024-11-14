@@ -1,0 +1,112 @@
+.almarai-light {
+  font-family: "Almarai", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.almarai-regular {
+  font-family: "Almarai", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.almarai-bold {
+  font-family: "Almarai", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.almarai-extrabold {
+  font-family: "Almarai", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+.nav-style {
+  background-color: #b45b35;
+}
+.logo {
+  width: 80px;
+  height: 45px;
+}
+.p-relative {
+  position: relative;
+}
+.search {
+  border-radius: 30px !important;
+  width: 50%;
+  border-color: transparent;
+  padding-right: 20px !important;
+  margin-right: 50px;
+  align-self: end;
+}
+.fa-search {
+  position: absolute;
+  left: 30px;
+}
+.card {
+  position: relative;
+  height: 350px !important;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card .card-layout {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.45);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  color: white;
+  opacity: 0;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.card:hover .card-layout {
+  opacity: 1;
+}
+.card-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.image {
+  width: 300px;
+  border-radius: 20px;
+}
+.button {
+  background-color: #b45b35;
+  color: white;
+  border-color: transparent;
+  transition: 0.5s;
+  border-radius: 8px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  padding: 5px;
+}
+.button:hover {
+  background-color: white;
+  color: #b45b35;
+  border-color: #b45b35;
+}
+@media (max-width: 375px) {
+  .col {
+    width: 100% !important;
+  }
+}
+@media (max-width: 576px) {
+  .content {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .content p {
+    font-size: 20px !important;
+  }
+}
