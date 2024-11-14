@@ -26,7 +26,7 @@ const MovieDetails = () => {
   }
   useEffect(() => {
     getMovieDetails();
-  }, []);
+  });
 
   return (
     <div>
